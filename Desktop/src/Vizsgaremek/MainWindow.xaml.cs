@@ -34,5 +34,28 @@ namespace Vizsgaremek
             //Megjelenítjük a WelcomePage-et
             Navigate.Navigation(welcomePage);
         }
+
+        /// <summary>
+        /// ListView elem bal egér gomb fel lett engedve
+        /// </summary>
+        /// <param name="sender">ListView, amin megnyomtuk a bal egérgombot</param>
+        /// <param name="e"></param>
+        private void ListView_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            ListView lwMenu = sender as ListView;
+            ListViewItem lwMenuItem = lwMenu.SelectedItem as ListViewItem; //as helyett típuskényszerítés
+
+            if (lwMenuItem != null)
+            {
+                //x:Name tulajdonságot vizsgáljuk
+                switch (lwMenuItem.Name)
+                {
+                    case "lwiExit":
+                        Close();
+                        break;
+                }
+            }
+
+        }
     }
 }
