@@ -20,7 +20,7 @@
                 <ListView   BorderBrush="Transparent" Background="Transparent">
                     <ListViewItem FontFamily="Century Gothic" FontSize="13" Foreground="White">
                         <TextBlock>
-                            Menu1
+                            Menü 1.
                         </TextBlock>
                     </ListViewItem>
                     <ListViewItem FontFamily="Century Gothic" FontSize="13" Foreground="White">
