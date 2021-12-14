@@ -26,7 +26,7 @@
                     <ListViewItem x:Name="lwiExit" FontFamily="Century Gothic" FontSize="13" Foreground="White">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock>
-                            Kilépés<Image Source="/Icon/exit.png" Width="30" Height="30" />
+                            Kilépés<Image Source="./Icon/exit.png" Width="30" Height="30" />
 
                             </TextBlock>
 
