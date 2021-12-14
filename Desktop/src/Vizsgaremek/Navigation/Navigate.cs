@@ -20,5 +20,10 @@ namespace Vizsgaremek.Navigation
         {
             mainWindow.PageContent.Children.Add(userControl);
         }
+        public static void Navigation(Page userPage)
+        {
+            mainWindow.PageContent.Children.Clear();
+            mainWindow.PageContent.Children.Add(userPage);
+        }
     }
 }
