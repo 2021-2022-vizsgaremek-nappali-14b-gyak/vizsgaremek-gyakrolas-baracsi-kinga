@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Vizsgaremek.Navigation;
+using Vizsgaremek.ViewModels;
 
 namespace Vizsgaremek.Pages
 {
@@ -24,6 +25,8 @@ namespace Vizsgaremek.Pages
         public ProgramVersion()
         {
             InitializeComponent();
+            ProgramVersionViewModel programVersionViewModel = new ProgramVersionViewModel();
+            this.DataContext = programVersionViewModel;
         }
         //vissza ikonra kattintva visszatér a nyitóoldalra
         private void Image_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)

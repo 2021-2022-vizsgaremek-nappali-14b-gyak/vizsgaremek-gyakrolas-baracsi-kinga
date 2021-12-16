@@ -11,9 +11,13 @@
         <StackPanel HorizontalAlignment="Right">
             <Image Source="/Icon/back.png" Height="48" PreviewMouseLeftButtonUp="Image_PreviewMouseLeftButtonUp"/>
         </StackPanel>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10 5 10 5">
 
             <TextBlock x:Name="WelcomeText" Text="Üdvözöljük a programban!"></TextBlock>
+            <StackPanel HorizontalAlignment="Left">
+                <Label>ProgramVerzió</Label>
+                <TextBox x:Name="txtVersion" Text="Biding"></TextBox>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
