@@ -53,6 +53,10 @@ namespace Vizsgaremek
                     case "lwiExit":
                         Close();
                         break;
+                    case "lwiProgramVersion":
+                        ProgramVersion programVersion = new ProgramVersion();
+                        Navigate.Navigation(programVersion);
+                        break;
                 }
             }
 

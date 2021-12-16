@@ -23,6 +23,16 @@
                             Menü 1.
                         </TextBlock>
                     </ListViewItem>
+                    <ListViewItem x:Name="lwiProgramVersion" FontFamily="Century Gothic" FontSize="13" Foreground="White">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock>
+                            Program Verzió<Image Source="./Icon/exit.png" Width="30" Height="30" />
+
+                            </TextBlock>
+
+                        </StackPanel>
+                        
+                    </ListViewItem>
                     <ListViewItem x:Name="lwiExit" FontFamily="Century Gothic" FontSize="13" Foreground="White">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock>
@@ -31,7 +41,7 @@
                             </TextBlock>
 
                         </StackPanel>
-                        
+
                     </ListViewItem>
                 </ListView>
 
