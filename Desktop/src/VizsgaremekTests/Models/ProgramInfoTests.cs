@@ -16,10 +16,10 @@ namespace Vizsgaremek.Models.Tests
         public void ProgramInfoTestVersion()
         {
             ProgramInfo programInfo = new ProgramInfo();
-            string expected = "0.0.4";
+            Version expected = new Version(0,0,3,0);
 
-            string actual = programInfo.Version;
-            Assert.AreEqual(expected, actual,"Version is not 0.0.4");
+            Version actual = programInfo.Version;
+            Assert.AreEqual(expected, actual,"Version is not 0.0.3.0");
             
         }
     }
