@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <Version>0.0.2.0</Version>
+    <Version>0.0.3.0</Version>
     <Authors>Baracsi Kinga</Authors>
     <Company>Vasvári</Company>
     <Description>Program verzió navigáció működik</Description>
