@@ -17,11 +17,16 @@ namespace Vizsgaremek.ViewModels
             {
                 return programInfo.Version;
             }
+            set
+            {
+                Version = value;
+            }
+
         }
 
         public ProgramVersionViewModel()
         {
-            ProgramInfo programInfo = new ProgramInfo();
+            programInfo = new ProgramInfo();
 
         }
     }
