@@ -18,7 +18,7 @@ namespace Vizsgaremek.Models
             {
                 var assembly = Assembly.GetExecutingAssembly();
                 var assemblyVersion = assembly.GetName().Version;
-                return "";
+                return assemblyVersion.ToString();
             }
         }
 
