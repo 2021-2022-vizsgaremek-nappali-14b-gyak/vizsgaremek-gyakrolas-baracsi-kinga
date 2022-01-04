@@ -7,7 +7,7 @@
     <Version>0.0.3.0</Version>
     <Authors>Baracsi Kinga</Authors>
     <Company>Vasvári</Company>
-    <Description>Program verzió navigáció működik</Description>
+    <Description>Program MVVM része készítése</Description>
   </PropertyGroup>
 
   <ItemGroup>
