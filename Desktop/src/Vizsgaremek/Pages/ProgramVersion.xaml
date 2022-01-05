@@ -18,6 +18,21 @@
                 <Label>ProgramVerzió</Label>
                 <TextBox x:Name="txtVersion" Text="{Binding Path=Version}" IsReadOnly="True"></TextBox>
             </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label>ProgramCím:</Label>
+                <TextBox x:Name="txtTitle" Text="{Binding Path=Title}" IsReadOnly="True"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label>Cég:</Label>
+                <TextBox x:Name="txtCompany" Text="{Binding Path=Company}" IsReadOnly="True"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label>Leírás:</Label>
+                <TextBox x:Name="txtDescription" Text="{Binding Path=Description}" IsReadOnly="True"></TextBox>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </UserControl>

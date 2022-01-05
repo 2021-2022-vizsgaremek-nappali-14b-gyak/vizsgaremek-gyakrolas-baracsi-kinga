@@ -57,6 +57,7 @@ namespace Vizsgaremek
                         ProgramVersion programVersion = new ProgramVersion();
                         Navigate.Navigation(programVersion);
                         break;
+                    
                 }
             }
 
