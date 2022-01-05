@@ -23,16 +23,7 @@ namespace Vizsgaremek.Models.Tests
 
         }
 
-        [TestMethod()]
-        public void ProgramInfoTestAuthor()
-        {
-            ProgramInfo programInfo = new ProgramInfo();
-            string expected = new string("Baracsi Kinga");
-
-            string actual = programInfo.Authors;
-            Assert.AreEqual(expected, actual, "Hiba!");
-        }
-
+        
         [TestMethod()]
         public void ProgramInfoTestTitle()
         {
