@@ -24,6 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Octokit" Version="0.50.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Icon\back.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
