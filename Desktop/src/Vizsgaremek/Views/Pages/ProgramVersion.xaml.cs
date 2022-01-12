@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Vizsgaremek.Navigation;
 using Vizsgaremek.ViewModels;
+using Vizsgaremek.Views.Navigation;
 
-namespace Vizsgaremek.Pages
+namespace Vizsgaremek.Views.Pages
 {
     /// <summary>
     /// Interaction logic for ProgramVersion.xaml
