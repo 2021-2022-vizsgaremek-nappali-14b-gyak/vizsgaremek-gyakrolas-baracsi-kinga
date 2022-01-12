@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Vizsgaremek.Views.Navigation;
+using Vizsgaremek.ViewModels;
+
 namespace Vizsgaremek.Views.Pages
 {
     /// <summary>
@@ -20,9 +22,12 @@ namespace Vizsgaremek.Views.Pages
     /// </summary>
     public partial class DatabaseSourcePage : UserControl
     {
+        DatabaseSourceViewModel databaseSourceViewModel;
         public DatabaseSourcePage()
         {
+            databaseSourceViewModel = new DatabaseSourceViewModel();
             InitializeComponent();
+            this.DataContext=databaseSourceViewModel
         }
 
         
