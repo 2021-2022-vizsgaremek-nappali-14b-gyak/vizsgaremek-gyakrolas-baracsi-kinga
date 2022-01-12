@@ -53,11 +53,17 @@ namespace Vizsgaremek
                     case "lwiExit":
                         Close();
                         break;
+                    case "lwiDatabaseSourceSelection":
+                        DatabaseSourcePage databaseSourcePage = new DatabaseSourcePage();
+                        Navigate.Navigation(databaseSourcePage);
+                        break;
                     case "lwiProgramVersion":
                         ProgramVersion programVersion = new ProgramVersion();
                         Navigate.Navigation(programVersion);
                         break;
-                    
+                   
+
+
                 }
             }
 
