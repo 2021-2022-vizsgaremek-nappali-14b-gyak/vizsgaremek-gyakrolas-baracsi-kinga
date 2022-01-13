@@ -30,8 +30,8 @@ namespace Vizsgaremek.ViewModels
             set
             {
                 selectedDatabaseSource = value;
-                dbSource = DbSource;
                 displayedDatabaseSource = DisplayedDatabaseSource;
+                dbSource = DbSource;
 
             }
         }
