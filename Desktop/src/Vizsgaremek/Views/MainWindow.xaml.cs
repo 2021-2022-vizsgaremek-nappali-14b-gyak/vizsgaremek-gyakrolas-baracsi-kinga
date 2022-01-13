@@ -33,6 +33,10 @@ namespace Vizsgaremek
             mainWindowViewModel = new MainWindowViewModel();
             databaseSourceViewModel = new DatabaseSourceViewModel();
             mainWindowViewModel.SelectedSource = databaseSourceViewModel.DisplayedDatabaseSource;
+
+            // Feliratkozunk az eseményre. Ha változik az adat az adott osztályba tudni fogunk róla!
+            databaseSourceViewModel.ChangeDatabaseSource += DatabaseSourceViewModel_ChangeDatabaseSource;
+
             InitializeComponent();
             //A MainWindow ablakban megjelenő adatok a MainWindowViewModel-ben vannak
             this.DataContext = mainWindowViewModel;
@@ -45,6 +49,12 @@ namespace Vizsgaremek
             WelcomePage welcomePage = new WelcomePage();
             //Megjelenítjük a WelcomePage-et
             Navigate.Navigation(welcomePage);
+        }
+
+        private void DatabaseSourceViewModel_ChangeDatabaseSource(object sender, EventArgs e)
+        {
+            DatabaseSourceEventArg dsea = (DatabaseSourceEventArg) e;
+            mainWindowViewModel.SelectedSource = dsea.DatabaseSource;
         }
 
         /// <summary>
@@ -73,12 +83,8 @@ namespace Vizsgaremek
                         ProgramVersion programVersion = new ProgramVersion();
                         Navigate.Navigation(programVersion);
                         break;
-                   
-
-
                 }
             }
-
         }
 
         
