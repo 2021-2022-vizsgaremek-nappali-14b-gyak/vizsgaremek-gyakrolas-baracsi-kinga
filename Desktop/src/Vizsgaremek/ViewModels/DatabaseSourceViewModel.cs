@@ -4,15 +4,17 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vizsgaremek.Models;
 using Vizsgaremek.Repositories;
 
 namespace Vizsgaremek.ViewModels
 {
-    class DatabaseSourceViewModel
+    public class DatabaseSourceViewModel
     {
         private ObservableCollection<string> displayedDatabaseSources;
         private string selectedDatabaseSource;
-
+        private DbSource dbSource;
+        
         DatabaseSources repoDatabaseSources;
 
        
@@ -25,6 +27,15 @@ namespace Vizsgaremek.ViewModels
         {
             get => selectedDatabaseSource;
             set => selectedDatabaseSource = value;
+        }
+
+        public DbSource DbSource
+        {
+            get
+            {
+                //TDD fejlesztés
+                return DbSource.NONE;
+            }
         }
 
         public DatabaseSourceViewModel()
